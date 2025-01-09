@@ -11,15 +11,12 @@ class Stack:
         # 스택에서 원소 추출
         if not self.is_empty():
             return self.stack.pop()
-        else:
-            raise IndexError("pop from empty stack")
 
     def peek(self):
         # 스택의 가장 위 원소 조회
         if not self.is_empty():
             return self.stack[-1]
-        else:
-            return None
+        return None
 
     def is_empty(self):
         # 스택이 비어있는지 확인
